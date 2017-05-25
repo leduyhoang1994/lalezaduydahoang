@@ -13,7 +13,7 @@
 		jQuery(document).ready(function($) {
 			$("#GetOrders").submit(function(event) {
 				$.ajax({
-					url: window.location.hostname,
+					url: 'https://htmlpreview.github.io/?https://github.com/leduyhoang1994/lalezaduydahoang/blob/master/index.php',
 					type: 'GET',
 					dataType: 'html',
 					data: $("#GetOrders").serialize(),
