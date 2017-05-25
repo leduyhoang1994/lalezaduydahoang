@@ -15,7 +15,7 @@
 				$.ajax({
 					url: window.location.hostname,
 					type: 'GET',
-					dataType: 'json',
+					dataType: 'html',
 					data: $("#GetOrders").serialize(),
 				})
 				.done(function(e) {
@@ -25,6 +25,7 @@
 				.fail(function(e) {
 					console.log(e);
 					console.log("error");
+					$("#debug-log").append(e);
 				})
 				.always(function() {
 					console.log("complete");
@@ -98,4 +99,9 @@
 	  <tbody id="list">
 	  </tbody>
 	</table>
+	<div id="">
+		<p id="debug-log">
+			
+		</p>
+	</div>
 </body>
