@@ -1,4 +1,7 @@
 <?php require_once "clientRequestController.php";?>
+<?php 
+	echo 123123123123;
+?>
 <head>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
