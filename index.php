@@ -13,7 +13,7 @@
 		jQuery(document).ready(function($) {
 			$("#GetOrders").submit(function(event) {
 				$.ajax({
-					url: '',
+					url: window.location.hostname,
 					type: 'GET',
 					dataType: 'json',
 					data: $("#GetOrders").serialize(),
